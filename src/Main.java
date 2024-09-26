@@ -19,9 +19,6 @@ public class Main {
         System.out.println("Задача 2");
         System.out.println("-----------------------");
         System.out.println("Укажите модель вашего смартфона и год его выпуска через пробел, где 0 = iOS, 1 = Android: ");
-        int clientOS2 = console.nextInt();
-        String linkIOS2 = "<a href=https://ru.wikipedia.org/wiki/App_Store>iOS</a>";
-        String linkAndr2 = "<a href=https://ru.m.wikipedia.org/wiki/Google_Play>Android</a>";
         String linkiOSNew = "https://upload.wikimedia.org/wikipedia/commons/e/e4/Original_iPhone_-_iPhone_3G_-_iPhone_4_-_Flickr_-_Yutaka_Tsutano.jpg";
         String linkAndrNew = "https://i.pinimg.com/736x/fe/21/8f/fe218f96fff462ea5e4f5c70b57bfb4f--best-android-best-phone.jpg";
         int clientDeviceYear = console.nextInt();
