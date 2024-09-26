@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -10,10 +11,8 @@ public class Main {
         String linkAndr = "https://i.pinimg.com/736x/0e/23/67/0e23674f40640af4c730344a860a4fd4.jpg";
         if (clientOS == 0) {
             System.out.print("Установите версию приложения для iOS по ссылке " + linkIOS);
-        } else if (clientOS == 1) {
-            System.out.println("Установите версию приложения для Android по ссылке " + linkAndr);
         } else {
-            System.out.println("Error!");
+            System.out.println("Установите версию приложения для Android по ссылке " + linkAndr);
         }
         System.out.println("-----------------------" + "\n");
 
@@ -25,15 +24,15 @@ public class Main {
         String linkAndr2 = "<a href=https://ru.m.wikipedia.org/wiki/Google_Play>Android</a>";
         String linkiOSNew = "https://upload.wikimedia.org/wikipedia/commons/e/e4/Original_iPhone_-_iPhone_3G_-_iPhone_4_-_Flickr_-_Yutaka_Tsutano.jpg";
         String linkAndrNew = "https://i.pinimg.com/736x/fe/21/8f/fe218f96fff462ea5e4f5c70b57bfb4f--best-android-best-phone.jpg";
-        int osYear = console.nextInt();
-        if (clientOS == 0 && osYear > 2015) {
+        int clientDeviceYear = console.nextInt();
+        if (clientOS == 0 && clientDeviceYear > 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке" + linkIOS);
-        } else if (clientOS == 1 && osYear > 2015) {
+        } else if (clientOS == 1 && clientDeviceYear > 2015) {
             System.out.println("Установите версию приложения для Android по ссылке" + linkAndr);
-        } else if (clientOS == 0 && osYear < 2015) {
+        } else if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке" + linkiOSNew);
         }
-         else if (clientOS == 1 && osYear < 2015) {
+         else if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке" + linkAndrNew);
         } else {
              System.out.println("Error!");
